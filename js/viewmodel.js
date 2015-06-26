@@ -74,6 +74,9 @@ function Game() {
     this.level = 1;
     this.isFirstGame = 1;
 
+    // is current level solved by solver?
+    this.solved = false;
+
     // Objects that help facilitate the game
     this.gb;
     this.sh = new styleHelper();
@@ -157,6 +160,8 @@ function Game() {
         self.sh.setGridSize(this.level);
         self.updateCounts();
         self.applyBindings();
+
+        this.solved = false;
     }
 
     this.updateCounts = function () {

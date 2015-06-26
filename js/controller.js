@@ -13,6 +13,7 @@ $(document).ready(function () {
     $("#reset").text(i18n.__("reset"));
     $("#new").text(i18n.__("new"));
     $("#instruct").text(i18n.__("instruct"));
+    $('#solve').text(i18n.__('solve'));
 
     $message_modal = $('#message-modal').modal({
         backdrop: true,
@@ -55,6 +56,10 @@ $(document).ready(function () {
 
     $('.instruct').click(function () {
         showMessage(i18n.__("instruct"), i18n.__("instruct_details"), null, null);
+    });
+
+    $('.solve').click(function() {
+        solveGame(game);
     });
 
     var game = new Game();

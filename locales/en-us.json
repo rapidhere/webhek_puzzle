@@ -3,6 +3,7 @@
     "title": "Blue Puzzle",
     "reset": "Reset Level",
     "new": "Restart",
+    "solve": "Solve",
     "instruct": "Instructions",
     "instruct_details": "How to win? \nInstructions：Make all of them blue, then you get through this level",
     "confirm": "Confirm!",
