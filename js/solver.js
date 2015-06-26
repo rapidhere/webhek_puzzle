@@ -52,7 +52,6 @@ rapidGameSolver.new1dArray = function(l) {
 
 // toggle a solve display or not
 rapidGameSolver.toggleSolve = function($div) {
-    console.log('Here');
     var clicked = parseInt($div.attr('data-clicked'));
     var sol = parseInt($div.attr('data-sol'));
     var flag = sol ^ clicked;
@@ -144,7 +143,7 @@ rapidGameSolver.solveGame = function(game) {
     // solve
     for(i = nx - 1;i >= 0;i --) {
         // arbitary
-        if(! a[i][i])
+        if(! a[i][i]) 
             x[i] = 0;
 
         // accumulate
